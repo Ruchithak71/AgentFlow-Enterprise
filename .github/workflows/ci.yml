@@ -23,7 +23,7 @@ jobs:
     - name: Build Java Spring Boot App
       run: |
         cd java-orchestrator
-        ./mvnw clean package -DskipTests
+        mvn clean package -DskipTests
 
   test-python:
     name: Test Python AI Worker
